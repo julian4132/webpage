@@ -1,0 +1,17 @@
+
+.myHeader {
+    color: brown;
+    background-color: white;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+body {
+    background-color: #94112d;
+  }
+
+
+text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
