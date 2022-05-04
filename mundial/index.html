@@ -26,7 +26,6 @@
 	
 	/* Slideshow container */
 	.slideshow-container {
-	  max-width: 1000px;
 	  position: relative;
 	  margin: auto;
 	}
@@ -69,12 +68,14 @@
 	/* Fading animation */
 	.fade {
 	  animation-name: fade;
-	  animation-duration: 1.5s;
+	  animation-duration: 5.4s;
 	}
 	
 	@keyframes fade {
-	  from {opacity: .4} 
-	  to {opacity: 1}
+	  0% {opacity: 0.1} 
+	  10% {opacity: 1}
+	  90% {opacity: 1}
+	  100% {opacity: 0.1}
 	}
 	
 	/* On smaller screens, decrease text size */
@@ -87,19 +88,16 @@
 	<div class="slideshow-container">
 	
 	<div class="mySlides fade">
-	  <div class="numbertext">1 / 3</div>
 	  <img src="messi.jpg" style="width:100%">
 	  <div class="text">Lionel Messi, Argentina</div>
 	</div>
 	
 	<div class="mySlides fade">
-	  <div class="numbertext">2 / 3</div>
 	  <img src="mbappe.jpg" style="width:100%">
 	  <div class="text">Killian Mbappe, France</div>
 	</div>
 	
 	<div class="mySlides fade">
-	  <div class="numbertext">3 / 3</div>
 	  <img src="allison.jpg" style="width:100%">
 	  <div class="text">Allison Becker, Brazil</div>
 	</div>
