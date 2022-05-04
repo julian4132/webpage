@@ -1,11 +1,22 @@
 
 .myHeader {
-    color: brown;
+    color: #a52a2a;
     background-color: white;
     padding-bottom: 5px;
     padding-top: 5px;
 }
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 18%;
+}
 
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 body {
     background-color: #94112d;
   }
