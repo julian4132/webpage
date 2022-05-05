@@ -1,126 +1,106 @@
-.bgcolor {
-  background-color: rgb(155, 155, 155);
-}
-
 .myHeader {
-	background-color: #203354;
-	box-shadow: 0 4px 2px -2px #000000;
-  font-family: 'Oswald', sans-serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: #a52a2a;
+    position:sticky ;
+    top:0;
+    background-color: rgb(212, 212, 212);
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 5px;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 18%;
 }
 
-.fstHeading {
-	color: #E8E8E8;
-	text-align: left;
-	padding-left: 70px;
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #94112d;
+  }
+
+.bigtext {
+  color: #f2f2f2;
+  font-size: 60px;
+  padding: 80px 120px;
+  position: absolute;
+  bottom: 80px;
+  text-align: left;
+  width: 70%;
 }
 
-.center {
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+figure.sixteen-nine-img {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
   text-align: center;
 }
 
-
-.container {
-	position: relative;
-}
-.vertical-center {
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-
-.centerTable{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-table {
-  border-collapse: collapse;
-	text-align: center;
-	vertical-align: middle;
-  box-shadow: 0 0 4px 2px #000000;
-
-}
-
-caption {
-  font-weight: bold;
-  font-size: 24px;
-  text-align: left;
-  color: #333;
-  margin-bottom: 16px;
-  padding-top: 30px;
+.text-main {
+  color: #f2f2f2;
+  font-size: 70px;
+  padding: 80px 120px;
+  position: absolute;
+  bottom: 800px;
+  width: 100%;
   text-align: center;
-  vertical-align: middle;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-th, td{
-  padding: 10px;
+.active {
+  background-color: #717171;
 }
 
-
-thead {
-  background-color: #333;
-  color: #FFF;
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 5.4s;
 }
 
-tbody tr:hover{
-	filter: brightness(120%);
+@keyframes fade {
+  0% {opacity: 0.1} 
+  10% {opacity: 1}
+  90% {opacity: 1}
+  100% {opacity: 0.1}
 }
 
-tbody tr:nth-child(even) {
-  background-color: rgb(226, 226, 226);
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
 }
-
-tbody tr:nth-child(odd) {
-  background-color: #fff;
-}
-
-
-tbody th {
-  background-color: #385992;
-  color: #fff;
-  text-align: left;
-}
-
-
-
-.myImg {
-	width: 120px;
-	height: auto;
-	vertical-align: middle;
-}
-
-.myImg:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
-
-
-.imagenes {
-  box-shadow: 0 0 1px 1px #000000;
-  -webkit-filter: grayscale(0);
-  filter: none;
-}
-
-.imagenes:hover {
-  filter: gray;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-}
-
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
