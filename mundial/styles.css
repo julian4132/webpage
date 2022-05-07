@@ -1,3 +1,11 @@
+.headerLink {
+  display: inline;
+  padding: 0 10px 0 10px;
+  font-family: 'Roboto Condensed';
+  font-size: 20px;
+}
+
+
 .myHeader {
     font-family: 'Be Vietnam Pro', sans-serif;
     color: #a52a2a;
