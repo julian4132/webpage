@@ -4,7 +4,6 @@
   font-size: 15px;
 }
 
-
 .myHeader {
     font-family: 'Be Vietnam Pro', sans-serif;
     color: #a52a2a;
@@ -51,8 +50,8 @@ body {
 .bigtext {
   color: rgb(212, 212, 212);
   font-size: 55px;
-  padding: 150px 30px;;
-  left: 40%;
+  padding: 200px 30px;;
+  left: 7%;
   bottom: 1px;
   text-align: left;
   position:absolute;
