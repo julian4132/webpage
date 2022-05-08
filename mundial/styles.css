@@ -24,6 +24,26 @@
   }
 }
 
+.activee.fade-left {
+  animation: fade-left 1s ease-in;
+}
+
+.activee.fade-left-slow {
+  animation: fade-left 2s ease-in;
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
 .reveal {
   position: relative;
   opacity: 0;
@@ -193,3 +213,11 @@ figure.sixteen-nine-img {
   background: #882222; 
 }
 
+.feature-title {
+  padding-left: 15%;
+  padding-top: 8%;
+}
+
+.feature-text {
+  padding-left: 15%;
+}
