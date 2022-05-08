@@ -74,8 +74,6 @@
 .column {
   float: left;
   width: 18%;
-  padding-top:1%;
-  padding-bottom:1%;
 }
 
 /* Clear floats after image containers */
@@ -84,10 +82,9 @@
   clear: both;
   display: table;
 }
-
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
-    background-color: rgb(15,15,15);
+    background-color: rgb(15, 15, 15);
   }
 
 .img {
@@ -180,13 +177,6 @@ figure.sixteen-nine-img {
 .fade {
   animation-name: fade;
   animation-duration: 5.4s;
-}
-
-.row-right{
-    padding-left:5%;
-}
-.row-left{
-    padding-right:5%;
 }
 
 @keyframes fade {
