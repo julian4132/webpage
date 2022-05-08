@@ -1,3 +1,27 @@
+.activee.fade-right {
+  animation: fade-right 1s ease-in;
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.activee {
+  opacity: 1;
+}
+
 .headerLink {
   display: inline;
   padding: 0 10px 0 10px;
