@@ -82,6 +82,11 @@ body {
   width: 50%;
 }
 
+.w3-card {
+  display: inline-block;
+  min-width: 200px;
+}
+
 
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
@@ -176,5 +181,4 @@ figure.sixteen-nine-img {
 ::-webkit-scrollbar-thumb:hover {
   background: #882222; 
 }
-
 
