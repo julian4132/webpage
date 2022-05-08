@@ -104,13 +104,15 @@ figure.sixteen-nine-img {
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+  color: rgb(212, 212, 212);
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 25px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  padding: 8px 30px;
   position: absolute;
-  bottom: 8px;
+  bottom: 200px;
   width: 100%;
-  text-align: center;
+  text-align: right;
 }
 
 .text-main {
