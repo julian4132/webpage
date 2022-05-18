@@ -207,8 +207,11 @@ figure.sixteen-nine-img {
 .feature-title {
   padding-left: 15%;
   padding-top: 8%;
+  color: rgb(212, 212, 212);
 }
 
 .feature-text {
   padding-left: 15%;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  color: rgb(212, 212, 212);
 }
