@@ -10,12 +10,6 @@
     }
   }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .activee.fade-right {
   animation: fade-right 1s ease-in;
@@ -54,7 +48,6 @@
     opacity: 1;
   }
 }
-
 
 .reveal {
   position: relative;
@@ -223,6 +216,23 @@ figure.sixteen-nine-img {
 .flex-item img {
   height: 230px;
   margin:20px;
+}
+
+.left-item {
+  margin-left: 50px;
+}
+
+.right-item {
+  margin-right: 50px;
+}
+
+@media (max-width: 1125px) {
+  .left-item {
+    margin-left: 0px;
+  }
+  .right-item {
+    margin-right: 0px;
+  }
 }
 
 @media (max-width: 700px) {
