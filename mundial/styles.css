@@ -1,5 +1,4 @@
-
-  @media only screen and (min-width: 880px){
+@media only screen and (min-width: 880px){
     .small-dev{
     display: none;
     }
@@ -11,12 +10,6 @@
     }
   }
 
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 .activee.fade-right {
   animation: fade-right 1s ease-in;
@@ -55,7 +48,6 @@
     opacity: 1;
   }
 }
-
 
 .reveal {
   position: relative;
@@ -204,14 +196,65 @@ figure.sixteen-nine-img {
   .text {font-size: 11px}
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: burlywood;
+  padding: 10px;
+  align-content: space-around;
+  align-items: center;
+  background-color: rgb(15, 15, 15);
+}
+
+.flex-item {
+  /*border: 2px solid black;*/
+  margin: 10px;
+  color: white; 
+  width: 45%;
+}
+
+.flex-item img {
+  height: 230px;
+  margin:20px;
+}
+
+.left-item {
+  margin-left: 50px;
+}
+
+.right-item {
+  margin-right: 50px;
+}
+
+@media (max-width: 1125px) {
+  .left-item {
+    margin-left: 0px;
+  }
+  .right-item {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 700px) {
+  .flex-item img {
+    height: 190px;
+  }
+}
+
+@media (max-width: 500px) {
+  .flex-item img {
+    height: 150px;
+  }
+}
+
+
 .feature-title {
-  padding-left: 15%;
-  padding-top: 8%;
+  margin:20px;
   color: rgb(212, 212, 212);
 }
 
 .feature-text {
-  padding-left: 15%;
+  margin:20px;
   font-family: 'Be Vietnam Pro', sans-serif;
   color: rgb(212, 212, 212);
 }

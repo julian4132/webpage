@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="scrollbar.css">
 </head>
-<body class = "bgcolor">
+<body>
 	<div class="w3-row container myHeader">
 		<nav class="w3-container w3-left">
 			<div class="row">
@@ -108,10 +108,9 @@
 	</div>
 	<script src="slider.js"></script>
 
-
-    <div style="width:85%; margin: auto;">
-        <div style="overflow: auto; background-color: rgb(15, 15, 15);color: white; padding: 2%;" class="row row-right">
-            <div class="column">
+    <section>
+        <div class="flex-container">
+            <div class="flex-item left-item">
                 <div class="reveal fade-right feature-title">
                     <h1><b>Noticias</b></h1>
                 </div>
@@ -122,18 +121,16 @@
                     <a href="#" class="w3-button w3-red w3-round-xlarge" style="background-color: #a52a2a !important;">Acceder</a>
                 </div>
             </div>
-            
-            <div class="column" style="float: right">
-                <img src="images/news.png" style="max-width: 80%; padding-right:14%;">
+            <div style="margin-left:auto" class="flex-item right-item">
+                <img src="images/001-news.png" style="float: right">
             </div>
         </div>
 
-        <div style="overflow: auto; background-color: rgb(25,25,25);color: white; padding: 2%" class="row row-left">
-            <div class="column" style="float: left">
-                <img src="images/fixture.png" style="width: 215%; padding-left:35%;">
+        <div style="background-color: rgb(25,25,25)"; class="flex-container">
+            <div class="flex-item left-item">
+                <img src="images/002-fixtures.png">
             </div>
-            
-            <div class="column" style="float: right">
+            <div style="margin-left:auto" class="flex-item">
                 <div class="reveal fade-left feature-title">
                     <h1><b>Fixture</b></h1>
                 </div>
@@ -146,8 +143,8 @@
             </div>
         </div>
 
-        <div style="overflow: auto; background-color: rgb(15, 15, 15);color: white; padding: 2%" class="row-right">
-            <div class="column">
+        <div class="flex-container">
+            <div class="flex-item left-item">
                 <div class="reveal fade-right feature-title">
                     <h1><b>Entradas</b></h1>
                 </div>
@@ -158,14 +155,13 @@
                     <a href="#" class="w3-button w3-red w3-round-xlarge" style="background-color: #a52a2a !important;">Acceder</a>
                 </div>
             </div>
-            
-            <div class="column" style="float: right">
-                <img src="images/entrada.png" style="max-width: 100%; padding-right:14%;">
+            <div style="margin-left:auto" class="flex-item right-item">
+                <img src="images/004-football-ticket.png" style="float: right">
             </div>
         </div>
-    </div>
+    </section>
 
-	
+
 	<script type="text/javascript" src="scrollReveal.js"></script>
     <script>
         closeSidebar();
