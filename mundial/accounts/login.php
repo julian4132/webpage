@@ -14,6 +14,7 @@ if($row_cnt = $sql->num_rows > 0){
     $passhash = $row['passhash'];
 
     if(password_verify($userPassword, $passhash)){
+        $_SESSION['user_name'] = $row['correo'];
         echo "Login Successful";
     }
     
