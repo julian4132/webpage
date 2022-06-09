@@ -8,7 +8,6 @@ $sql = $conn->query("SELECT * FROM `usuarios` WHERE correo='".$userEmail."'");
 
 if($row_cnt = $sql->num_rows > 0){
 
-    echo "hoooolaa";
 
     $row= $sql->fetch_array(MYSQLI_ASSOC);
     $passhash = $row['passhash'];
@@ -16,6 +15,7 @@ if($row_cnt = $sql->num_rows > 0){
     if(password_verify($userPassword, $passhash)){
         $_SESSION['user_name'] = $row['correo'];
         echo "Login Successful";
+        mail('joaquinvergara070@gmail.com', 'test', 'hola animal');
     }
     
 }
