@@ -15,5 +15,9 @@ $(document).ready(function() {
         }
 
     });
+    $("#hamburger").click(function() {
+        $(".nav__links").toggleClass("show");
+        
+    });
 });
 
