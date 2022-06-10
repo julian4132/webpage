@@ -1,15 +1,19 @@
 $(document).ready(function() {
     $.ajax({
         url: "isLoggedIn.php",
-        method: "post",
-        data: {
-        }, 
-        success: function() {
-            $(".login-bt").hide();
+        method: "get",
+        success: function(data) {
+            if(data == "true") {
+                $("#login-bt").hide();
+
+            } else {
+                $("#my-acc").hide();
+            }
         },
         error: function() {
-            $(".my-acc").hide();
+            console.log("error");
         }
 
     });
 });
+

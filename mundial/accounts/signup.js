@@ -24,8 +24,8 @@ $( document ).ready(function() {
                     //mas opciones y para cerrar sesion.
                     window.location.replace("../index.php");
                     $(document).ready(function() {
-                        $('.login-bt').hide();
-                        $('.my-acc').show();
+//                        $('.login-bt').hide();
+ //                       $('.my-acc').show();
 
                     });
                     //login successful

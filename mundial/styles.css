@@ -124,7 +124,7 @@ nav {
   color: var(--darkcolor1);
 }
 
-.login-bt, .my-acc {
+.login-bt  {
   padding: 9px 25px;
   color: var(--color2);
   background-color: var(--color1);
@@ -134,7 +134,7 @@ nav {
   transition: all 0.3s ease 0s;
 }
 
-.login-bt:hover, .my-acc:hover {
+.login-bt:hover{
   background-color: var(--darkcolor1);
 }
 
@@ -168,7 +168,7 @@ nav {
       display: flex;
   }
 
-  .login-bt, .my-acc {
+  .login-bt{
       display: none;
   }
 

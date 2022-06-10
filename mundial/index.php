@@ -5,7 +5,7 @@ $user = $_SESSION['user_name'];
 ?>
 <html>
 <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0" />
 <head>
     <script src="jquery.js"></script>
     <script src="main.js"></script>
@@ -28,8 +28,8 @@ $user = $_SESSION['user_name'];
             <li><a href="#" style="text-decoration: none;">Funciones</a></li>
             <li><a href="#" style="text-decoration: none;">Quienes somos</a></li>
             <li><a href="#" style="text-decoration: none;">Contacto</a></li>
-            <li><a href="accounts/login.html"><button class="login-bt" id="login-bt">Ingresar</button></a></li>
-            <li><a href="#" class="my-acc" style="text-decoration: none;">Mi cuenta</a></li>
+            <li id="login-bt"><a href="accounts/login.html"><button class="login-bt" >Ingresar</button></a></li>
+            <li id="my-acc"><a href="#"><button class="login-bt" >Mi Cuenta</button></a></li>
         </ul>
     </nav>
 
