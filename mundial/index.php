@@ -97,7 +97,7 @@ $user = $_SESSION['user_name'];
                     <p>Las ultimas novedades relacionadas al mundial de futbol 2022, todas en un mismo lugar. </p>
                 </div>
                 <div class="feature-text">
-                    <a href="#" class="w3-button w3-red w3-round-xlarge" style="background-color: #a52a2a !important;">Acceder</a>
+                    <a href="#"><button class="login-bt">Acceder</button></a>
                 </div>
             </div>
             <div style="margin-left:auto" class="flex-item right-item">
@@ -117,7 +117,7 @@ $user = $_SESSION['user_name'];
                     <p>Mira los grupos y crea tus predicciones para los futuros partidos. </p>
                 </div>
                 <div class="feature-text">
-                    <a href="#" class="w3-button w3-red w3-round-xlarge" style="background-color: #a52a2a !important;">Acceder</a>
+                    <a href="#"><button class="login-bt">Acceder</button></a>
                 </div>
             </div>
         </div>
@@ -131,7 +131,7 @@ $user = $_SESSION['user_name'];
                     <p>Adquiere por anticipado los boletos para los partidos, exclusivemente desde nuestra tienda digital </p>
                 </div>
                 <div class="feature-text">
-                    <a href="#" class="w3-button w3-red w3-round-xlarge" style="background-color: #a52a2a !important;">Acceder</a>
+                    <a href="#"><button class="login-bt">Acceder</button></a>
                 </div>
             </div>
             <div style="margin-left:auto" class="flex-item right-item">
