@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
+    <script src="../jquery.js"></script>
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="../scrollbar.css">
 </head>
 <body>
   <div class="box">
-    <form action="login.php/" method="post">
+    <form action="login.php" method="post">
         <div class="container">
           <h1>Ingresar</h1>
           <p>Completa este formulario para acceder a tu cuenta</p>
@@ -23,8 +24,8 @@
           <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
           <hr>
       
-          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-          <button type="submit" class="registerbtn">Ingresar</button>
+          <p>Creando una cuenta estás aceptando nuestros <a href="#">Términos y condiciones</a>.</p>
+          <button type="submit"  id="submit" class="registerbtn">Ingresar</button>
           
         </div>
       
@@ -32,6 +33,7 @@
           <p> ¿Todavía no tienes una cuenta? <a href="signup.html">Registrarse</a>.</p>
         </div>
       </form>
+    <script src="login.js"></script>
   </div>
     
 </body>
