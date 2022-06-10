@@ -8,6 +8,7 @@ $user = $_SESSION['user_name'];
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 <head>
     <script src="jquery.js"></script>
+    <script src="main.js"></script>
 	<title>Qatar 2022</title>
 	<link rel="shortcut icon" href="logo_title.png">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -27,7 +28,8 @@ $user = $_SESSION['user_name'];
             <li><a href="#" style="text-decoration: none;">Funciones</a></li>
             <li><a href="#" style="text-decoration: none;">Quienes somos</a></li>
             <li><a href="#" style="text-decoration: none;">Contacto</a></li>
-            <li><a href="accounts/login.html"><button class="login-bt">Ingresar</button></a></li>
+            <li><a href="accounts/login.html"><button class="login-bt" id="login-bt">Ingresar</button></a></li>
+            <li><a href="#" class="my-acc" style="text-decoration: none;">Mi cuenta</a></li>
         </ul>
     </nav>
 

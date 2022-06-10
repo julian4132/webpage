@@ -23,6 +23,11 @@ $( document ).ready(function() {
                     //el login y signup (ya inicio sesion), y armar tipo una barra con 
                     //mas opciones y para cerrar sesion.
                     window.location.replace("../index.php");
+                    $(document).ready(function() {
+                        $('.login-bt').hide();
+                        $('.my-acc').show();
+
+                    });
                     //login successful
                 } else {
                     if(json['error'] == 'different passwords') {
