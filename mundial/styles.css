@@ -180,6 +180,9 @@ nav {
   .login-bt{
       display: none;
   }
+  .login-bt.show {
+      display: block;
+  }
 
   .hamburger {
       display: block;

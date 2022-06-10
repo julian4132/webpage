@@ -17,7 +17,10 @@ $(document).ready(function() {
     });
     $("#hamburger").click(function() {
         $(".nav__links").toggleClass("show");
-        
+        $(".login-bt").toggleClass("show");
+    });
+    $("#my-acc").click(function() {
+        console.log("click");
     });
 });
 
