@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <script src="../jquery.js"></script>
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="../scrollbar.css">
 </head>
 <body>
     <div class="box">
-        <form action="signup.php/" method="post">
+        <form>
             <div class="container">
             <h1>Registrarse</h1>
             <p>Completa este formulario para registrar una nueva cuenta</p>
             <hr>
-        
+
             <label for="email"><b>Email</b></label>
             <input type="text" placeholder="Enter Email" name="email" id="email" required>
         
@@ -26,14 +27,15 @@
             <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
             <hr>
         
-            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-            <button type="submit" class="registerbtn">Registrarse</button>
+            <p>Creando una cuenta estás aceptando nuestros <a href="#">Términos y condiciones</a>.</p>
+            <button type="submit" id="submit" class="registerbtn">Registrarse</button>
             </div>
         
             <div class="container signin">
             <p>¿Ya tienes una cuenta? <a href="login.html">Ingresar</a>.</p>
             </div>
         </form>
+        <script src="signup.js"></script>
     </div>
     
     

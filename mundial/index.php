@@ -45,7 +45,9 @@ $user = $_SESSION['user_name'];
 		<div class="w3-container w3-right w3-animate-right big-dev" style="padding-top: 3px;">
 			<a href="accounts/login.html"  id="loginBtn" class="w3-button w3-round-xlarge w3-border" style="color: #a52a2a !important; border-color:#a52a2a !important;"><b>Iniciar Sesión</a>
 			<a href="accounts/signup.html" id="signupBtn" class="w3-button w3-red w3-round-xlarge" style="background-color: #a52a2a !important;">Registrarse</a>
+            <!-- ver los signup.js y/o login.js (joaco hizo esto)-->
             <?= $user ?>
+            <script src="accounts/modal.js"></script>
 		</div>
         <div class="column small-dev w3-right">
             <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()" style="font-size: 20px !important;">Menú</button>

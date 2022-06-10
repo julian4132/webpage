@@ -5,18 +5,19 @@ $( document ).ready(function() {
         console.log("ready");
         let user = $('#email').val();
         let pass = $('#psw').val();
-        console.log(user);
+        let rpt = $('#psw-repeat').val();
 
         $.ajax({
-            url: "login.php",
+            url: "signup.php",
             method: "post",
             data: {
                 'email': user,
-                'psw': pass
+                'psw': pass,
+                'psw-repeat': rpt
             },
             success: function(data) {
+                // sin esta linea el js llora por formatos
                 let json = JSON.parse(data)
-                console.log(data);
                 if(json['success'] == true) {
                     //aca hay que poner el codigo javascript para que se oculte
                     //el login y signup (ya inicio sesion), y armar tipo una barra con 
@@ -24,6 +25,12 @@ $( document ).ready(function() {
                     window.location.replace("../index.php");
                     //login successful
                 } else {
+                    if(json['error'] == 'different passwords') {
+                        alert('Las contraseñas no coinciden.');
+                    }
+                    if(json['error'] == 'mail already used') {
+                        alert('El correo electronico ya está en uso.');
+                    }
                     // login failed
                 }
             },
