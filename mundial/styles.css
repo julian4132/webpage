@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --color1: #9a1032;
+    --color2: #fffbf7;
+    --darkcolor1: #700b24;
+    --backcolor: rgb(15, 15, 15);
+}
+
+
 @media only screen and (min-width: 880px){
     .small-dev{
     display: none;
@@ -58,23 +68,119 @@
   opacity: 1;
 }
 
-.headerLink {
-  display: inline;
-  padding: 0 10px 0 10px;
-  font-size: 15px;
+/* NAVBAR */
+
+
+li, a, .login-bt {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
 }
 
-.myHeader {
-    font-family: 'Be Vietnam Pro', sans-serif;
-    color: #a52a2a;
-    position:sticky ;
-    top:0;
-    background-color: rgb(212, 212, 212);
-    padding-bottom: 7px;
-    padding-top: 7px;
-    padding-left: 5px;
-    z-index: 1;
+li, a {
+  color: var(--color1);
 }
+
+nav {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3px 50px;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: var(--backcolor);
+}
+
+.logo {
+  cursor: pointer;
+  width: 25px;
+}
+
+.logo-text {
+  cursor: pointer;
+  width: 190px;
+}
+
+.nav__links {
+  list-style:none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 15px;
+  margin-right: auto;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: var(--darkcolor1);
+}
+
+.login-bt {
+  padding: 9px 25px;
+  color: var(--color2);
+  background-color: var(--color1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.login-bt:hover {
+  background-color: var(--darkcolor1);
+}
+
+.hamburger {
+  background-color: transparent;
+  border: none;
+  color: var(--color1);
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger i {
+  font-size: 50px;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 920px) {
+  nav {
+      padding: 3px 50px;
+  }
+
+  .nav__links {
+      display: none;
+      width: 100%;
+  }
+
+  .nav__links.show {
+      display: flex;
+  }
+
+  .login-bt {
+      display: none;
+  }
+
+  .hamburger {
+      display: block;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+      padding: 3px 10px;
+  }
+}
+
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
@@ -196,14 +302,16 @@ figure.sixteen-nine-img {
   .text {font-size: 11px}
 }
 
+
+/*Flex Features*/
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: burlywood;
   padding: 10px;
   align-content: space-around;
   align-items: center;
-  background-color: rgb(15, 15, 15);
+  background-color: var(--backcolor);
 }
 
 .flex-item {

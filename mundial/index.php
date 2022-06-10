@@ -5,6 +5,7 @@ $user = $_SESSION['user_name'];
 ?>
 <html>
 <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200">
 <head>
     <script src="jquery.js"></script>
 	<title>Qatar 2022</title>
@@ -14,45 +15,21 @@ $user = $_SESSION['user_name'];
 	<link rel="stylesheet" href="scrollbar.css">
 </head>
 <body>
-	<div class="w3-row container myHeader">
-		<nav class="w3-container w3-left">
-			<div class="row">
-				<a href="index.html" target="_blank">
-					<div class="column">
-						<img src="images/logo_title.png" alt="Logo Mundial" class="myImg w3-left " width="25px">
-					</div>
-					<div class="column big-dev">
-						<img src="images/logo_text.png" alt="Texto Logo" class="myImg w3-left" width="190px" style="padding-top:5px;">
-					</div>
-				</a>
-			</div>
-		</nav>
-        <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar" style="background-color: rgb(212, 212, 212)">
-            <div class="w3-container w3-theme-d2">
-              <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
-              <br>
-            </div>
-            <a class="w3-bar-item w3-button" href="#">Información reciente</a>
-            <a class="w3-bar-item w3-button" href="#">Quiénes somos</a>
-            <a class="w3-bar-item w3-button" href="accounts/login.html">Iniciar Sesión</a>
-            <a class="w3-bar-item w3-button" href="accounts/signup.html">Registrarse</a>
-            </nav>
-            
-		<ul class="w3-container w3-left big-dev">
-			<li class="headerLink"><a href="#" style="text-decoration: none;"><b>Quiénes somos</b> </a> </li>
-			<li class="headerLink"><a href="#" style="text-decoration: none;"><b>Información reciente</b> </a> </li>
-		</ul>
-		<div class="w3-container w3-right w3-animate-right big-dev" style="padding-top: 3px;">
-			<a href="accounts/login.html"  id="loginBtn" class="w3-button w3-round-xlarge w3-border" style="color: #a52a2a !important; border-color:#a52a2a !important;"><b>Iniciar Sesión</a>
-			<a href="accounts/signup.html" id="signupBtn" class="w3-button w3-red w3-round-xlarge" style="background-color: #a52a2a !important;">Registrarse</a>
-            <!-- ver los signup.js y/o login.js (joaco hizo esto)-->
-            <?= $user ?>
-            <script src="accounts/modal.js"></script>
-		</div>
-        <div class="column small-dev w3-right">
-            <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()" style="font-size: 20px !important;">Menú</button>
+    <nav>
+        <div style="margin-right: auto;">
+            <img class="logo" src="images/logo_title.png" alt="Logo Mundial">
+            <img class="logo-text" src="images/logo_text.png" alt="Texto Logo">
         </div>
-	</div>
+        <button class="hamburger" id="hamburger">
+            <i class="material-symbols-outlined">menu</i>
+        </button>
+        <ul class="nav__links" id="nav__links">
+            <li><a href="#" style="text-decoration: none;">Funciones</a></li>
+            <li><a href="#" style="text-decoration: none;">Quienes somos</a></li>
+            <li><a href="#" style="text-decoration: none;">Contacto</a></li>
+            <li><a href="accounts/signup.html"><button class="login-bt">Ingresar</button></a></li>
+        </ul>
+    </nav>
 
 	<div class="slideshow-container">
 		<div class="mySlides fade img">
