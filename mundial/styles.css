@@ -213,22 +213,6 @@ body {
   border-radius: 330px;
 }
 
-.bigtext {
-  color: rgb(212, 212, 212);
-  font-size: 55px;
-  padding: -25px 30px;;
-  left: 42%;
-  bottom: -20px;
-  text-align: left;
-  position:absolute;
-  width: 50%;
-}
-
-.w3-card {
-  display: inline-block;
-  min-width: 200px;
-}
-
 
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}

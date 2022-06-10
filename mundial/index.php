@@ -74,11 +74,6 @@ $user = $_SESSION['user_name'];
 
 	</div> 
 
-	<div class="w3-container">
-		<div class="w3-card title-card" >
-			<p class="bigtext" >EL MEJOR LUGAR PARA INFORMARTE Y CONSEGUIR TUS ENTRADAS</p>
-		</div>
-	</div>
 
 	<div style="text-align:center">
 	  <span class="dot"></span> 
@@ -147,16 +142,7 @@ $user = $_SESSION['user_name'];
 
 
 	<script type="text/javascript" src="scrollReveal.js"></script>
-    <script>
-        closeSidebar();
-        function openSidebar() {
-          document.getElementById("mySidebar").style.display = "block";
-        }
-        
-        function closeSidebar() {
-          document.getElementById("mySidebar").style.display = "none";
-        }
-    </script>
+
 
 </body>
 
