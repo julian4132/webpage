@@ -21,9 +21,9 @@ $user = $_SESSION['user_name'];
             <img class="logo" src="images/logo_title.png" alt="Logo Mundial">
             <img class="logo-text" src="images/logo_text.png" alt="Texto Logo">
         </div>
-        <button class="hamburger" id="hamburger">
+        <span class="hamburger" id="hamburger">
             <i class="material-symbols-outlined">menu</i>
-        </button>
+        </span>
         <ul class="nav__links" id="nav__links">
             <li><a href="#" style="text-decoration: none;">Funciones</a></li>
             <li><a href="#" style="text-decoration: none;">Quienes somos</a></li>
