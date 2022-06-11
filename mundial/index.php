@@ -38,42 +38,34 @@ if(isset($_SESSION['user_name'])){
         <div class="slideshow-container">
             <div class="mySlides fade img">
                 <img src="images/pedri.jpg" style="width:100%">
-                <div class="text">Pedri, España</div>
             </div>
             
             <div class="mySlides fade img">
                 <img src="images/messi.jpg" style="width:100%">
-                <div class="text">Lionel Messi, Argentina</div>
             </div>
             
             <div class="mySlides fade img">
                 <img src="images/cristiano.jpg" style="width:100%">
-                <div class="text">Cristiano Ronaldo, Portugal</div>
             </div>	
 
             <div class="mySlides fade img">
                 <img src="images/debruyne.jpg" style="width:100%">
-                <div class="text">Kevin De Bruyne, Inglaterra</div>
             </div>	
             
             <div class="mySlides fade img">
                 <img src="images/suarez.jpg" style="width:100%">
-                <div class="text">Luis Suárez, Uruguay</div>
             </div>	
 
             <div class="mySlides fade img">
                 <img src="images/lewandoski.jpg" style="width:100%">
-                <div class="text">Robert Lewandoski, Polonia</div>
             </div>	
 
             <div class="mySlides fade img">
                 <img src="images/van_dijk.jpg" style="width:100%">
-                <div class="text">Virgil van Dijk, Países Bajos</div>
             </div>	
 
             <div class="mySlides fade img">
                 <img src="images/paqueta.jpg" style="width:100%">
-                <div class="text">Lucas Paquetá, Brasil</div>
             </div>	
         </div> 
 
@@ -143,10 +135,27 @@ if(isset($_SESSION['user_name'])){
         </div>
     </section>
 
+    <section>
+        <div>
+            <h1>Quienes Somos</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Dolorum molestiae optio saepe asperiores in tempore. 
+                Delectus reprehenderit id ab hic atque, rerum blanditiis enim obcaecati tempora minus possimus assumenda sed?
+                Numquam itaque soluta natus eos mollitia adipisci totam aspernatur in vel, voluptatibus error repellat dignissimos iure necessitatibus. 
+                Laboriosam harum, inventore error dolore recusandae soluta placeat eaque animi? Vel, deserunt accusamus?
+            </p> 
+            <img src="" alt="">
+        </div>
+    </section>
 
+    <section>
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </section>
 </body>
-
-
-
 
 </html>
