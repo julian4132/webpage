@@ -1,18 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  --color1: #9a1032;
+  --color2: #fffbf7;
+  --darkcolor1: #700b24;
+  --backcolor: rgb(15, 15, 15);
+}
+
 body {
-  background-color: rgb(20,20,20);
-  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: rgb(12,12,12);
+  font-family: "Montserrat", sans-serif;
   color: rgb(212, 212, 212);
+  padding-top: 150px;
 }
 
 .box {
-  width: 40%;
+  width: 30%;
+  height: 70%;
   padding: 2% 4% 1% 4%; /* top right bottom left*/
-  margin:auto;
-  background-color: rgb(12,12,12);
+  margin: auto;
+  background-color: rgb(20,20,20);
   border-radius: 25px;
   box-shadow: 5px 10px 8px rgb(15,15,15);
   }
-
 
 * {box-sizing: border-box}
 
@@ -28,7 +38,7 @@ input[type=text], input[type=password] {
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
-  background: rgb(35,35,35);
+  background: rgb(160, 160, 160);
 }
 
 input[type=text]:focus, input[type=password]:focus {
@@ -42,27 +52,34 @@ hr {
   margin-bottom: 25px;
 }
 
-/* Set a style for the submit/register button */
-.registerbtn {
-  background-color: #a52a2a;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
+button  {
+  padding: 9px 25px;
   width: 100%;
-  opacity: 0.9;
-  border-radius: 15px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color2);
+  background-color: var(--color1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
-.registerbtn:hover {
-  opacity:1;
+button:hover{
+  background-color: var(--darkcolor1);
 }
 
-/* Add a blue text color to links */
+/* Add a red text color to links */
 a {
-  color: dodgerblue;
+  color: var(--color1);
+  transition: all 0.2s ease 0s;
+  text-decoration: none;
+  font-weight: 700;
 }
+
+a:hover {
+  color: var(--color2)}
 
 /* Set a grey background color and center the text of the "sign in" section */
 .signin {
