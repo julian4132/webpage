@@ -4,11 +4,13 @@
     --color1: #9a1032;
     --color2: #fffbf7;
     --darkcolor1: #700b24;
-    --backcolor: rgb(15, 15, 15);
+    --backcolor1: rgb(15, 15, 15);
+    --backcolor2: rgb(25,25,25);
 }
 
 body {
-  background-color: rgb(15, 15, 15);
+  background-color: var(--backcolor1);
+  color: var(--color2);
 }
 
 @media only screen and (min-width: 880px){
@@ -93,7 +95,7 @@ nav {
   z-index: 1;
   position: sticky;
   top: 0;
-  background-color: var(--backcolor);
+  background-color: var(--backcolor1);
 }
 
 .logo {
@@ -243,23 +245,6 @@ figure.sixteen-nine-img {
   position: relative;
 }
 
-/* Caption text */
-.text {
-  color: rgb(212, 212, 212);
-  font-family: 'Be Vietnam Pro', sans-serif;
-  font-size: 25px;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  padding: 8px 30px;
-  position: absolute;
-  bottom: 200px;
-  width: 100%;
-  text-align: right;
-}
-
-.active {
-  background-color: #717171;
-}
-
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -281,7 +266,7 @@ figure.sixteen-nine-img {
   padding: 10px;
   align-content: space-around;
   align-items: center;
-  background-color: var(--backcolor);
+  background-color: var(--backcolor1);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -307,12 +292,10 @@ figure.sixteen-nine-img {
 
 .feature-title {
   margin:20px;
-  color: rgb(212, 212, 212);
 }
 
 .feature-text {
   margin:20px;
-  color: rgb(212, 212, 212);
   font-size: 20px;
 }
 
