@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <?php
 session_start();
-$user = $_SESSION['user_name'];
+if(isset($_SESSION['user_name'])){
+    $user = $_SESSION['user_name'];
+}
 ?>
 <html>
 <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
@@ -25,11 +27,11 @@ $user = $_SESSION['user_name'];
             <i class="material-symbols-outlined">menu</i>
         </span>
         <ul class="nav__links" id="nav__links">
-            <li><a href="#" style="text-decoration: none;">Funciones</a></li>
-            <li><a href="#" style="text-decoration: none;">Quienes somos</a></li>
-            <li><a href="#" style="text-decoration: none;">Contacto</a></li>
+            <li><a href="#">Funciones</a></li>
+            <li><a href="#">Quienes somos</a></li>
+            <li><a href="#">Contacto</a></li>
             <li id="login-bt"><a href="accounts/login.html"><button class="login-bt" >Ingresar</button></a></li>
-            <li id="my-acc"><a href="#"><button class="login-bt" >Mi Cuenta</button></a></li>
+            <li id="my-acc"><a href="accounts/profile.php"><button class="login-bt" >Mi Cuenta</button></a></li>
         </ul>
     </nav>
 
