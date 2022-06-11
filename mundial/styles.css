@@ -175,9 +175,13 @@ button:hover{
       display: flex;
       flex-direction: column;
   }
+
+  .nav__links li {
+    padding: 0px 0px;
+  }
+
   .nav__links li a.show{
       font-size: 20px;
-      text-align: center;
     }
 
   .login-bt{
@@ -196,8 +200,16 @@ button:hover{
 
 @media screen and (max-width: 500px) {
   nav {
-      padding: 3px 10px;
+      padding: 5px 15px;
   }
+
+  .nav__links li a.show{
+    font-size: 27px;
+  }
+
+  .login-bt.show {
+    font-size: 25px;
+}
 }
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
