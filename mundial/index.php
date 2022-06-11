@@ -34,63 +34,62 @@ if(isset($_SESSION['user_name'])){
             <li id="my-acc"><a href="accounts/profile.php"><button class="login-bt" >Mi Cuenta</button></a></li>
         </ul>
     </nav>
+    <section>
+        <div class="slideshow-container">
+            <div class="mySlides fade img">
+                <img src="images/pedri.jpg" style="width:100%">
+                <div class="text">Pedri, España</div>
+            </div>
+            
+            <div class="mySlides fade img">
+                <img src="images/messi.jpg" style="width:100%">
+                <div class="text">Lionel Messi, Argentina</div>
+            </div>
+            
+            <div class="mySlides fade img">
+                <img src="images/cristiano.jpg" style="width:100%">
+                <div class="text">Cristiano Ronaldo, Portugal</div>
+            </div>	
 
-	<div class="slideshow-container">
-		<div class="mySlides fade img">
-            <img src="images/pedri.jpg" style="width:100%">
-            <div class="text">Pedri, España</div>
-		</div>
-		
-		<div class="mySlides fade img">
-            <img src="images/messi.jpg" style="width:100%">
-            <div class="text">Lionel Messi, Argentina</div>
-		</div>
-		
-		<div class="mySlides fade img">
-            <img src="images/cristiano.jpg" style="width:100%">
-            <div class="text">Cristiano Ronaldo, Portugal</div>
-		</div>	
+            <div class="mySlides fade img">
+                <img src="images/debruyne.jpg" style="width:100%">
+                <div class="text">Kevin De Bruyne, Inglaterra</div>
+            </div>	
+            
+            <div class="mySlides fade img">
+                <img src="images/suarez.jpg" style="width:100%">
+                <div class="text">Luis Suárez, Uruguay</div>
+            </div>	
 
-		<div class="mySlides fade img">
-            <img src="images/debruyne.jpg" style="width:100%">
-            <div class="text">Kevin De Bruyne, Inglaterra</div>
-		</div>	
-		
-		<div class="mySlides fade img">
-            <img src="images/suarez.jpg" style="width:100%">
-            <div class="text">Luis Suárez, Uruguay</div>
-		</div>	
+            <div class="mySlides fade img">
+                <img src="images/lewandoski.jpg" style="width:100%">
+                <div class="text">Robert Lewandoski, Polonia</div>
+            </div>	
 
-		<div class="mySlides fade img">
-            <img src="images/lewandoski.jpg" style="width:100%">
-            <div class="text">Robert Lewandoski, Polonia</div>
-		</div>	
+            <div class="mySlides fade img">
+                <img src="images/van_dijk.jpg" style="width:100%">
+                <div class="text">Virgil van Dijk, Países Bajos</div>
+            </div>	
 
-		<div class="mySlides fade img">
-            <img src="images/van_dijk.jpg" style="width:100%">
-            <div class="text">Virgil van Dijk, Países Bajos</div>
-		</div>	
+            <div class="mySlides fade img">
+                <img src="images/paqueta.jpg" style="width:100%">
+                <div class="text">Lucas Paquetá, Brasil</div>
+            </div>	
+        </div> 
 
-		<div class="mySlides fade img">
-            <img src="images/paqueta.jpg" style="width:100%">
-            <div class="text">Lucas Paquetá, Brasil</div>
-		</div>	
-
-	</div> 
-
-
-	<div style="text-align:center">
-	  <span class="dot"></span> 
-	  <span class="dot"></span> 
-	  <span class="dot"></span> 
-	  <span class="dot"></span> 
-	  <span class="dot"></span> 
-	  <span class="dot"></span> 
-	  <span class="dot"></span> 
-	  <span class="dot"></span> 
-	</div>
-	<script src="slider.js"></script>
-
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+        <script src="slider.js"></script>
+    </section>
+    
     <section>
         <div class="flex-container">
             <div class="flex-item left-item">
@@ -132,7 +131,7 @@ if(isset($_SESSION['user_name'])){
                     <h1><b>Entradas</b></h1>
                 </div>
                 <div class="reveal fade-right-slow feature-text">
-                    <p>Adquiere por anticipado los boletos para los partidos, exclusivemente desde nuestra tienda digital </p>
+                    <p>Adquiere por anticipado los boletos para los partidos, exclusivamente desde nuestra tienda digital </p>
                 </div>
                 <div class="feature-text">
                     <a href="#"><button>Acceder</button></a>
