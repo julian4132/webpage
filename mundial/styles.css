@@ -209,20 +209,6 @@ nav {
   display: table;
 }
 
-
-
-.title-card {
-  width: 70%;
-  height: 40%;
-  left: -27%;
-  position: absolute;
-  background-color:#000000a2;
-  top: 30%;
-  opacity: 100%;
-  border-radius: 330px;
-}
-
-
 * {box-sizing: border-box;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
