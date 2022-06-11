@@ -19,6 +19,7 @@ $(document).ready(function() {
     });
     $("#hamburger").click(function() {
         $(".nav__links").toggleClass("show");
+        $(".nav__links li a").toggleClass("show");
         $(".login-bt").toggleClass("show");
     });
     $("#my-acc").click(function() {
