@@ -6,7 +6,7 @@ session_start();
 $userEmail=mysqli_real_escape_string($conn, $_POST['email']);
 $userPassword=mysqli_real_escape_string($conn, $_POST['psw']);
 
-$sql = $conn->query("SELECT * FROM `usuarios` WHERE correo='".$userEmail."'");
+$sql = $conn->query("SELECT * FROM `usuarios` WHERE correo='".$userEmail."' AND activo='1'");
 
 if($row_cnt = $sql->num_rows > 0){
 
