@@ -100,7 +100,7 @@ if(isset($_SESSION['user_name'])){
             </div>
         </div>
 
-        <div style="background-color: rgb(25,25,25)"; class="flex-container">
+        <div style="background-color: var(--backcolor2)"; class="flex-container">
             <div class="flex-item left-item">
                 <img src="images/002-fixtures.png">
             </div>
@@ -156,6 +156,7 @@ if(isset($_SESSION['user_name'])){
             <li><a href="#"></a></li>
         </ul>
     </section>
+    
 </body>
 
 </html>
