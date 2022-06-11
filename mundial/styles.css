@@ -124,7 +124,7 @@ nav {
   color: var(--darkcolor1);
 }
 
-.login-bt  {
+button  {
   padding: 9px 25px;
   color: var(--color2);
   background-color: var(--color1);
@@ -134,7 +134,7 @@ nav {
   transition: all 0.3s ease 0s;
 }
 
-.login-bt:hover{
+button:hover{
   background-color: var(--darkcolor1);
 }
 
