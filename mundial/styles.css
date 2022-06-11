@@ -124,7 +124,7 @@ nav {
   color: var(--darkcolor1);
 }
 
-.login-bt  {
+button  {
   padding: 9px 25px;
   color: var(--color2);
   background-color: var(--color1);
@@ -134,7 +134,7 @@ nav {
   transition: all 0.3s ease 0s;
 }
 
-.login-bt:hover{
+button:hover{
   background-color: var(--darkcolor1);
 }
 
@@ -144,6 +144,7 @@ nav {
   color: var(--color1);
   cursor: pointer;
   display: none;
+  padding: 5px 0px;
 }
 
 .hamburger i {
@@ -257,12 +258,6 @@ figure.sixteen-nine-img {
   100% {opacity: 0.1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-
 /*Flex Features*/
 
 .flex-container {
@@ -295,6 +290,17 @@ figure.sixteen-nine-img {
   margin-right: 50px;
 }
 
+.feature-title {
+  margin:20px;
+  color: rgb(212, 212, 212);
+}
+
+.feature-text {
+  margin:20px;
+  color: rgb(212, 212, 212);
+  font-size: 20px;
+}
+
 @media (max-width: 1125px) {
   .left-item {
     margin-left: 0px;
@@ -308,22 +314,19 @@ figure.sixteen-nine-img {
   .flex-item img {
     height: 190px;
   }
+
+  .feature-text {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 500px) {
   .flex-item img {
     height: 150px;
   }
+
+  .feature-text {
+    font-size: 16px;
+  }
 }
 
-
-.feature-title {
-  margin:20px;
-  color: rgb(212, 212, 212);
-}
-
-.feature-text {
-  margin:20px;
-  color: rgb(212, 212, 212);
-  font-size: 20px;
-}

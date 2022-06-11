@@ -21,9 +21,9 @@ $user = $_SESSION['user_name'];
             <img class="logo" src="images/logo_title.png" alt="Logo Mundial">
             <img class="logo-text" src="images/logo_text.png" alt="Texto Logo">
         </div>
-        <button class="hamburger" id="hamburger">
+        <span class="hamburger" id="hamburger">
             <i class="material-symbols-outlined">menu</i>
-        </button>
+        </span>
         <ul class="nav__links" id="nav__links">
             <li><a href="#" style="text-decoration: none;">Funciones</a></li>
             <li><a href="#" style="text-decoration: none;">Quienes somos</a></li>
@@ -99,7 +99,7 @@ $user = $_SESSION['user_name'];
                     <p>Las ultimas novedades relacionadas al mundial de futbol 2022, todas en un mismo lugar. </p>
                 </div>
                 <div class="feature-text">
-                    <a href="#"><button class="login-bt">Acceder</button></a>
+                    <a href="#"><button>Acceder</button></a>
                 </div>
             </div>
             <div style="margin-left:auto" class="flex-item right-item">
@@ -119,7 +119,7 @@ $user = $_SESSION['user_name'];
                     <p>Mira los grupos y crea tus predicciones para los futuros partidos. </p>
                 </div>
                 <div class="feature-text">
-                    <a href="#"><button class="login-bt">Acceder</button></a>
+                    <a href="#"><button>Acceder</button></a>
                 </div>
             </div>
         </div>
@@ -133,7 +133,7 @@ $user = $_SESSION['user_name'];
                     <p>Adquiere por anticipado los boletos para los partidos, exclusivemente desde nuestra tienda digital </p>
                 </div>
                 <div class="feature-text">
-                    <a href="#"><button class="login-bt">Acceder</button></a>
+                    <a href="#"><button>Acceder</button></a>
                 </div>
             </div>
             <div style="margin-left:auto" class="flex-item right-item">
