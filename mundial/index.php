@@ -143,9 +143,6 @@ $user = $_SESSION['user_name'];
     </section>
 
 
-	<script type="text/javascript" src="scrollReveal.js"></script>
-
-
 </body>
 
 
