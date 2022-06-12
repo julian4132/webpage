@@ -395,7 +395,6 @@ hr {
   }
 }
 
-
 .contact {
   background-color: var(--color1);
   padding: 30px 50px;
@@ -432,3 +431,14 @@ hr {
     font-size: 30px;
   }
 }
+
+@media (max-width: 550px) {
+  .contact {
+    padding: 30px 10px;
+  }
+
+  .contact li a{
+    font-size: 20px;
+  }
+}
+
