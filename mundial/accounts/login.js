@@ -15,13 +15,8 @@ $( document ).ready(function() {
             success: function(data) {
                 let json = JSON.parse(data)
                 if(json['success'] == true) {
-                    //aca hay que poner el codigo javascript para que se oculte
-                    //el login y signup (ya inicio sesion), y armar tipo una barra con 
-                    //mas opciones y para cerrar sesion.
+                    // succesfuly logged in
                     window.location.replace("../index.php");
-                    //$('.login-bt').hide();
-                    //$('.my-acc').show();
-                    //login successful
                 } else {
                     console.log("error");
                     if(json['error'] == "1") {
@@ -38,6 +33,7 @@ $( document ).ready(function() {
                 }
             },
             error: function(data) {
+                console.log(data);
             }
         });
 
