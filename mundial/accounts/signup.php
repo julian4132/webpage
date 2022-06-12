@@ -17,7 +17,7 @@ if($_POST['psw']==$_POST['psw-repeat']){
     $hash = md5( rand(0,1000) );
     $sql = "INSERT INTO usuarios (correo, passhash, activo, verifhash) VALUES ('".$userEmail."', '".$userPassword."', 0, '".$hash."')";
 
-    //include "sendEmail.php";
+    include "sendEmail.php";
 
     if ($conn->query($sql) === TRUE) {
         //$_SESSION['user_name'] = $userEmail;

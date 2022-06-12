@@ -34,7 +34,7 @@ if($_POST['psw']==$_POST['psw-repeat']){
             $sql = $conn->query("UPDATE `usuarios` SET nuevopasshash='".$userPassword."' WHERE id='".$row['id']."' AND activo='1' ") or die(mysqli_error());
             $sql = $conn->query("UPDATE `usuarios` SET verifhash='".$hash."' WHERE id='".$row['id']."' AND activo='1' ") or die(mysqli_error());
 
-            //include "sendEmailEdit.php";
+            include "sendEmailEdit.php";
 
             echo json_encode(array('success' => true));
         } else {
