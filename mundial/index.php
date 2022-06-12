@@ -9,7 +9,7 @@ if(isset($_SESSION['user_name'])){
 <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="shortcut icon" href="favicon.ico"/>
+<link rel="shortcut icon" href="images/favicon.ico"/>
 <head>
     <script src="jquery.js"></script>
     <script src="main.js"></script>
