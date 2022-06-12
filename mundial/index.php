@@ -135,9 +135,9 @@ if(isset($_SESSION['user_name'])){
         </div>
     </section>
 
-    <section id="quienes-somos">
+    <section class="info-section" id="quienes-somos">
         <div>
-            <h1>Quienes Somos</h1>
+            <h1><b>Quienes Somos</b></h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                 Dolorum molestiae optio saepe asperiores in tempore. 
@@ -145,6 +145,8 @@ if(isset($_SESSION['user_name'])){
                 Numquam itaque soluta natus eos mollitia adipisci totam aspernatur in vel, voluptatibus error repellat dignissimos iure necessitatibus. 
                 Laboriosam harum, inventore error dolore recusandae soluta placeat eaque animi? Vel, deserunt accusamus?
             </p> 
+        </div>
+        <div>
             <img src="" alt="">
         </div>
     </section>

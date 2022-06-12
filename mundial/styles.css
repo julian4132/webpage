@@ -11,20 +11,10 @@
 body {
   background-color: var(--backcolor1);
   color: var(--color2);
+  font-family: "Montserrat", sans-serif;
 }
 
-@media only screen and (min-width: 880px){
-    .small-dev{
-    display: none;
-    }
-  }
-
-  @media only screen and (max-width: 880px){
-    .big-dev{
-    display: none;
-    }
-  }
-
+/* Fade animation*/
 
 .activee.fade-right {
   animation: fade-right 1s ease-in;
@@ -267,7 +257,6 @@ figure.sixteen-nine-img {
   align-content: space-around;
   align-items: center;
   background-color: var(--backcolor1);
-  font-family: "Montserrat", sans-serif;
 }
 
 .flex-item {
@@ -328,3 +317,19 @@ figure.sixteen-nine-img {
   }
 }
 
+/* Seccion Quienes Somos*/
+
+.info-section {
+  display: flex;
+  padding: 10px;
+  margin: 100px 50px;
+}
+
+.info-section h1 {
+  margin: 20px;
+}
+
+.info-section p {
+  margin: 20px;
+  font-size: 20px;
+}
