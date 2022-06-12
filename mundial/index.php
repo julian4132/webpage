@@ -139,8 +139,9 @@ if(isset($_SESSION['user_name'])){
 
     <section class="info-section" id="quienes-somos">
         <div>
-            <h1><b>Quienes Somos</b></h1>
-            <p>
+            <h1 class="reveal fade-right-slow"><b>Quienes Somos</b></h1>
+            <hr>
+            <p class="reveal fade-right">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                 Dolorum molestiae optio saepe asperiores in tempore. 
                 Delectus reprehenderit id ab hic atque, rerum blanditiis enim obcaecati tempora minus possimus assumenda sed?
@@ -153,13 +154,13 @@ if(isset($_SESSION['user_name'])){
         </div>
     </section>
 
-    <section id="contacto">
+    <footer id="contacto">
         <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">+54 9 341 696-9578</a></li>
         </ul>
-    </section>
+    </footer>
     
 </body>
 

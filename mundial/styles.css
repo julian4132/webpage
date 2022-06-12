@@ -319,17 +319,17 @@ figure.sixteen-nine-img {
 
 /* Seccion Quienes Somos*/
 
-.info-section {
-  display: flex;
-  padding: 10px;
-  text-align: justify;
-}
-
 hr {
   width: 100%;
   border: 2px solid var(--backcolor2);
-  border-radius: 50px;
   margin-top: 50px;
+}
+
+.info-section {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-align: justify;
 }
 
 .info-section div {
@@ -337,15 +337,65 @@ hr {
 }
 
 .info-section h1 {
-  margin: 20px;
+  margin-left: 20px;
+  font-size: 48px;
+}
+
+.info-section hr {
+  width: 45%;
+  border: 2px solid var(--color1);
+  border-radius: 50px;
+  margin-top: 0px;
+  margin-left: 20px;
 }
 
 .info-section p {
   margin: 20px;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .info-section img {
   height: 500px;
   margin: 20px 100px;
 }
+
+@media (max-width: 1500px) {
+  .info-section img {
+    height: 400px;
+    margin: 20px 50px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .info-section img {
+    height: 400px;
+    margin: 20px 10px;
+  }
+
+  .info-section div {
+    margin: 100px 0px;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .info-section {
+    flex-direction: column;
+  }
+  .info-section div {
+    margin: 10px 0px;
+  }
+
+}
+
+
+footer {
+  background-color: var(--color1);
+  display:flex;
+  color: var(--color2);
+}
+
+footer li a{
+  color: var(--color2);
+}
+
