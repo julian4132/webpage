@@ -23,7 +23,7 @@ session_start();
         </i>
       </a>
     <div class="box">
-        <form>
+        <form action="logout.php" method="get">
             <div class="container">
             <h1>Mi usuario</h1>
             <p>Estos son tus datos personales</p>
@@ -39,7 +39,6 @@ session_start();
 
             </div>
         </form>
-        <script src="signup.js"></script>
     </div>
     
     
