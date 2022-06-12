@@ -9,7 +9,9 @@ $registro = $mysqli->query("create table if not exists usuarios (
 	cuando	 	timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP(),
 	id		int not null primary key auto_increment,
 	activo   	boolean,
-	verifhash		text
+	verifhash		text,
+	nuevocorreo     text,
+	nuevopasshash   text
 )");
 
 ?>

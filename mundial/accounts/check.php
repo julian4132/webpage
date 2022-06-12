@@ -21,7 +21,7 @@ if(isset($_GET['user']) && !empty($_GET['user']) AND isset($_GET['hash']) && !em
     if($row_cnt = $sql->num_rows > 0){
         // Activar
         $sql = $conn->query("UPDATE `usuarios` SET activo='1' WHERE correo='".$user."' AND activo='0' AND verifhash='".$hash."' ") or die(mysqli_error());
-        echo '<div class="statusmsg">Tu cuenta está activada, ya puedes registrarte</div>';
+        echo '<div class="statusmsg">Tu cuenta está activada, ya puedes iniciar sesión</div>';
     }else{
         // Error
         echo '<div class="statusmsg">La url es inválida o ya has registrado tu cuenta</div>';

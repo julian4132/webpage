@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <script src="../jquery.js"></script>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../scrollbar.css">
+</head>
+<body>
+  <div class="box">
+    <form>
+        <div class="container">
+          <h1>Editar perfil</h1>
+          <p>Introduce tus nuevos datos</p>
+          <hr>
+      
+          <label for="email"><b>Nuevo Email</b></label>
+          <input type="text" placeholder="" name="email" id="email" required>
+      
+          <label for="psw"><b>Contraseña anterior</b></label>
+          <input type="password" placeholder="" name="oldpsw" id="oldpsw" required>
+          
+          <label for="psw"><b>Nueva contraseña</b></label>
+          <input type="password" placeholder="" name="psw" id="psw" required>
+
+          <label for="psw"><b>Repetir nueva contraseña</b></label>
+          <input type="password" placeholder="" name="psw-repeat" id="psw-repeat" required>
+          <hr>
+      
+          <button type="submit"  id="submit" class="registerbtn">Aplicar cambios</button>
+          
+        </div>
+      </form>
+    <script src="editProfile.js"></script>
+  </div>
+    
+</body>
+</html>

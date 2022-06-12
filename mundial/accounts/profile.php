@@ -29,7 +29,7 @@ session_start();
             <hr>
         
             <h3>¿Querés cambiar tus datos personales?</h3>
-            <p><a href="#">Editar mi perfil</a>.</p>
+            <p><a href="editProfile.html">Editar mi perfil</a>.</p>
 
             <button type="submit" id="submit" class="registerbtn">Cerrar sesión</button>
             </div>
