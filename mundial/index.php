@@ -27,9 +27,9 @@ if(isset($_SESSION['user_name'])){
             <i class="material-symbols-outlined">menu</i>
         </span>
         <ul class="nav__links" id="nav__links">
-            <li><a href="#">Funciones</a></li>
+            <li><a href="#funciones">Funciones</a></li>
             <li><a href="#quienes-somos">Quienes somos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#contacto">Contacto</a></li>
             <li id="login-bt"><a href="accounts/login.html"><button class="login-bt" >Ingresar</button></a></li>
             <li id="my-acc"><a href="accounts/profile.php"><button class="login-bt" >Mi Cuenta</button></a></li>
         </ul>
@@ -82,7 +82,7 @@ if(isset($_SESSION['user_name'])){
         <script src="slider.js"></script>
     </section>
     
-    <section>
+    <section style="padding-top: 30px" id="funciones">
         <div class="flex-container">
             <div class="flex-item left-item">
                 <div class="reveal fade-right feature-title">
@@ -135,8 +135,8 @@ if(isset($_SESSION['user_name'])){
         </div>
     </section>
 
-    <section>
-        <div id="quienes-somos">
+    <section id="quienes-somos">
+        <div>
             <h1>Quienes Somos</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -149,7 +149,7 @@ if(isset($_SESSION['user_name'])){
         </div>
     </section>
 
-    <section>
+    <section id="contacto">
         <ul>
             <li><a href="#"></a></li>
             <li><a href="#"></a></li>
