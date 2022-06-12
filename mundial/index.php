@@ -154,9 +154,9 @@ Nosotros creemos que, si hay algo que nos define, es el compromiso. El compromis
 
     <footer class="contact" id="contacto">
         <ul>
-            <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
-            <li><a href="#"><i class="fa fa-phone"></i> +54 9 341 696-9578</a></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ"><i class="fa fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ"><i class="fa fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://youtu.be/dQw4w9WgXcQ"><i class="fa fa-phone"></i> +54 9 341 696-9578</a></li>
         </ul>
     </footer>
     
