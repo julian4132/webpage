@@ -154,7 +154,7 @@ if(isset($_SESSION['user_name'])){
         </div>
     </section>
 
-    <footer id="contacto">
+    <footer class="contact" id="contacto">
         <ul>
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Twitter</a></li>

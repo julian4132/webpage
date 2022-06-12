@@ -65,15 +65,9 @@ body {
 
 /* NAVBAR */
 
-
 li, a, .login-bt {
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 16px;
-}
-
-li, a {
-  color: var(--color1);
 }
 
 nav {
@@ -111,6 +105,7 @@ nav {
 .nav__links li a {
   transition: all 0.3s ease 0s;
   text-decoration: none;
+  color: var(--color1);
 }
 
 .nav__links li a:hover {
@@ -173,7 +168,8 @@ button:hover{
   }
 
   .nav__links li a.show{
-      font-size: 20px;
+      font-size: 25px;
+      text-align: center;
     }
 
   .login-bt{
@@ -196,7 +192,7 @@ button:hover{
   }
 
   .nav__links li a.show{
-    font-size: 27px;
+    font-size: 30px;
   }
 
   .login-bt.show {
@@ -330,6 +326,7 @@ hr {
   align-items: center;
   padding: 10px;
   text-align: justify;
+  padding-bottom: 100px;;
 }
 
 .info-section div {
@@ -378,24 +375,49 @@ hr {
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 920px) {
   .info-section {
     flex-direction: column;
   }
   .info-section div {
     margin: 10px 0px;
   }
-
 }
 
 
-footer {
+.contact {
   background-color: var(--color1);
-  display:flex;
-  color: var(--color2);
+  padding: 30px 50px;
 }
 
-footer li a{
-  color: var(--color2);
+.contact ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
+.contact li {
+  list-style:none;
+  display: inline-block;
+}
+
+.contact li a{
+  text-decoration: none;
+  margin: 20px 60px;
+  font-size: 24px;
+}
+
+@media (max-width: 920px) {
+  .contact ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact li{
+    text-decoration: none;
+    margin: 10px;
+  }
+  .contact li a{
+    font-size: 30px;
+  }
+}
