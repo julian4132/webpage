@@ -22,14 +22,17 @@ if(isset($_GET['user']) && !empty($_GET['user']) AND isset($_GET['hash']) && !em
         // Activar
         $sql = $conn->query("UPDATE `usuarios` SET activo='1' WHERE correo='".$user."' AND activo='0' AND verifhash='".$hash."' ") or die(mysqli_error());
         echo '<div class="statusmsg">Tu cuenta está activada, ya puedes iniciar sesión</div>';
+        header('Location: ../index.php');
     }else{
         // Error
-        echo '<div class="statusmsg">La url es inválida o ya has registrado tu cuenta</div>';
+        //echo '<div class="statusmsg">La url es inválida o ya has registrado tu cuenta</div>';
+        header('Location: ../error.html');
     }
                  
 } else{
     // Invalid approach
-    echo '<div class="statusmsg">Error. Por favor, emplear el enlace que fue enviado por correo electrónico.</div>';
+    //echo '<div class="statusmsg">Error. Por favor, emplear el enlace que fue enviado por correo electrónico.</div>';
+    header('Location: ../error.html');
 }
 
 

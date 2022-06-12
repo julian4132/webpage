@@ -4,7 +4,7 @@ include_once "connect.php";
 //session_start();
 
 $userEmail=mysqli_real_escape_string($conn, $_POST['email']);
-$mail_check = $conn->query("SELECT * FROM `usuarios` WHERE correo='".$userEmail."'");
+$mail_check = $conn->query("SELECT * FROM `usuarios` WHERE correo='".$userEmail."' OR nuevocorreo='".$userEmail."' ");
 if($mail_check->num_rows > 0) {
     echo json_encode(array('success' => false, 'error' => 'mail already used'));
     $conn->close();

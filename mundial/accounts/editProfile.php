@@ -8,7 +8,15 @@ if($_POST['psw']==$_POST['psw-repeat']){
     $userEmail=mysqli_real_escape_string($conn, $_POST['email']);
     $userOldPassword=mysqli_real_escape_string($conn, $_POST['oldpsw']);
 
-    $sql = $conn->query("SELECT * FROM `usuarios` WHERE correo=/*'jujus@gmail.com'*/'".$_SESSION['user_name']."' AND activo='1'");
+    $mail_check = $conn->query("SELECT * FROM `usuarios` WHERE correo='".$userEmail."' OR nuevocorreo='".$userEmail."' ");
+    if($mail_check->num_rows > 0) {
+        echo json_encode(array('success' => false, 'error' => 'mail already used'));
+        $conn->close();
+        die();
+    }
+
+
+    $sql = $conn->query("SELECT * FROM `usuarios` WHERE correo='".$_SESSION['user_name']."' AND activo='1'");
 
     if($row_cnt = $sql->num_rows > 0){
 
