@@ -18,10 +18,12 @@ if($row_cnt = $sql->num_rows > 0){
         $_SESSION['user_name'] = $row['correo'];
         echo json_encode(array('success' => true));
     } else {
-        echo json_encode(array('success' => false, 'error' => 'incorrect password'));
+        //incorrect password
+        echo json_encode(array('success' => false, 'error' => 1));
     }
     
-} else echo json_encode(array('success' => false, 'error' => 'invalid user'));
+} else echo json_encode(array('success' => false, 'error' => 2));
+//invalid user
 
 
 
