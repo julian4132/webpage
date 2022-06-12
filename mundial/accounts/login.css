@@ -4,31 +4,32 @@
   --color1: #9a1032;
   --color2: #fffbf7;
   --darkcolor1: #700b24;
-  --backcolor: rgb(15, 15, 15);
+  --backcolor1: rgb(15, 15, 15);
+  --backcolor2: rgb(25,25,25);
 }
 
+* {box-sizing: border-box}
+
 body {
-  background-color: rgb(12,12,12);
+  background-color: var(--backcolor1);
   font-family: "Montserrat", sans-serif;
   color: rgb(212, 212, 212);
   padding-top: 150px;
 }
 
 .box {
-  width: 30%;
+  width: 500px;
   height: 70%;
   padding: 2% 4% 1% 4%; /* top right bottom left*/
   margin: auto;
-  background-color: rgb(20,20,20);
+  background-color: var(--backcolor2);
   border-radius: 25px;
   box-shadow: 5px 10px 8px rgb(15,15,15);
   }
 
-* {box-sizing: border-box}
-
 /* Add padding to containers */
 .container {
-  padding: 16px;
+  padding: 10px 0px;
 }
 
 /* Full-width input fields */
@@ -39,6 +40,7 @@ input[type=text], input[type=password] {
   display: inline-block;
   border: none;
   background: rgb(160, 160, 160);
+  border-radius: 10px;
 }
 
 input[type=text]:focus, input[type=password]:focus {
