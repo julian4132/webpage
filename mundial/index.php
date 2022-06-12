@@ -81,7 +81,7 @@ if(isset($_SESSION['user_name'])){
         </div>
         <script src="slider.js"></script>
     </section>
-    
+
     <section style="padding-top: 30px" id="funciones">
         <div class="flex-container">
             <div class="flex-item left-item">
@@ -135,6 +135,8 @@ if(isset($_SESSION['user_name'])){
         </div>
     </section>
 
+    <hr>
+
     <section class="info-section" id="quienes-somos">
         <div>
             <h1><b>Quienes Somos</b></h1>
@@ -147,7 +149,7 @@ if(isset($_SESSION['user_name'])){
             </p> 
         </div>
         <div>
-            <img src="" alt="">
+            <img src="images/pet.png" alt="la'eeb">
         </div>
     </section>
 

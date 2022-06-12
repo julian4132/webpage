@@ -322,6 +322,17 @@ figure.sixteen-nine-img {
 .info-section {
   display: flex;
   padding: 10px;
+  text-align: justify;
+}
+
+hr {
+  width: 100%;
+  border: 2px solid var(--backcolor2);
+  border-radius: 50px;
+  margin-top: 50px;
+}
+
+.info-section div {
   margin: 100px 50px;
 }
 
@@ -332,4 +343,9 @@ figure.sixteen-nine-img {
 .info-section p {
   margin: 20px;
   font-size: 20px;
+}
+
+.info-section img {
+  height: 500px;
+  margin: 20px 100px;
 }
