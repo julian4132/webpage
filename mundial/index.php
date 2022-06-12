@@ -143,11 +143,8 @@ if(isset($_SESSION['user_name'])){
             <h1 class="reveal fade-right-slow"><b>Quienes Somos</b></h1>
             <hr>
             <p class="reveal fade-right">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Dolorum molestiae optio saepe asperiores in tempore. 
-                Delectus reprehenderit id ab hic atque, rerum blanditiis enim obcaecati tempora minus possimus assumenda sed?
-                Numquam itaque soluta natus eos mollitia adipisci totam aspernatur in vel, voluptatibus error repellat dignissimos iure necessitatibus. 
-                Laboriosam harum, inventore error dolore recusandae soluta placeat eaque animi? Vel, deserunt accusamus?
+            Somos una organización sin fines de lucro que apunta a ser una fuente de información de excelencia acerca de la Copa Mundia de Fútbol Qatar 2022. Este proyecto, inicialmente promovido por cuatro estudiantes del Instituto Politécnico Superior, aspira a fomentar las actividades deportivas, lúdicas y sociales, consiguiendo generar un espacio propicio para cultivar y transmitir la pasión por este deporte emblemático, que nos hace tan argentinos.
+Nosotros creemos que, si hay algo que nos define, es el compromiso. El compromiso por garantizar el acceso a información actualizada y verídica, obtenida a partir de fuentes certificadas y presentada de manera simple, clara y concisa.
             </p> 
         </div>
         <div>
