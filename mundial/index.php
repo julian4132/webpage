@@ -8,6 +8,7 @@ if(isset($_SESSION['user_name'])){
 <html>
 <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
     <script src="jquery.js"></script>
     <script src="main.js"></script>
@@ -156,9 +157,9 @@ if(isset($_SESSION['user_name'])){
 
     <footer class="contact" id="contacto">
         <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">+54 9 341 696-9578</a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fa fa-phone"></i> +54 9 341 696-9578</a></li>
         </ul>
     </footer>
     
