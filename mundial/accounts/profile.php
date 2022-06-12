@@ -14,8 +14,14 @@ session_start();
     <script src="../jquery.js"></script>
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="../scrollbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+    <a href="../index.php" class="arrow">
+        <i class="material-symbols-outlined" style="font-size: 60px;">
+          arrow_back
+        </i>
+      </a>
     <div class="box">
         <form>
             <div class="container">
@@ -27,11 +33,10 @@ session_start();
             <p><?php echo $_SESSION['user_name'];?></p>
 
             <hr>
-        
-            <h3>¿Querés cambiar tus datos personales?</h3>
-            <p><a href="editProfile.html">Editar mi perfil</a>.</p>
-
             <button type="submit" id="submit" class="registerbtn">Cerrar sesión</button>
+
+            <p style="text-align: center">¿Querés cambiar estos datos? <a href="editProfile.html">Editar mi perfil</a> .</p> 
+
             </div>
         </form>
         <script src="signup.js"></script>
