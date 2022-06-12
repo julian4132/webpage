@@ -22,6 +22,8 @@ if(isset($_GET['user']) && !empty($_GET['user']) AND isset($_GET['hash']) && !em
         // Activar
         $sql = $conn->query("UPDATE `usuarios` SET activo='1' WHERE correo='".$user."' AND activo='0' AND verifhash='".$hash."' ") or die(mysqli_error());
         echo '<div class="statusmsg">Tu cuenta está activada, ya puedes iniciar sesión</div>';
+        session_start();
+        $_SESSION['user_name'] = $user;
         header('Location: ../index.php');
     }else{
         // Error
