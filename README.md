@@ -19,4 +19,6 @@ Página web comercial ficticia/no lucrativa, enfocada en la venta de boletos par
 (GRANT ALL PRIVILEGES ON nueve.* to 'nuevenue'@'%';)
 ```
 3. Abrir el archivo createTable.php desde el navegador
-!(https://c.tenor.com/GeThUZwLuDsAAAAd/messi-messirve.gif)
+
+
+<div style="text-align:center"><img src ="https://c.tenor.com/GeThUZwLuDsAAAAd/messi-messirve.gif" /></div>
