@@ -1,4 +1,7 @@
 # Qatar 2022
+
+![qatar logo](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOvjzsnX8ZuRAu3Q6rd6zcTB1blNargpKl1VSaaF-sCK6rhNTisThXPHyCMJWeVaO1QieP6EDTrMzPmH4TDlyLPAwgrmx7lkk-njAt6j1y1BQbYw5WLpi-kchbmbI55I4ShjCCGYpO7iCwd_2ZnKBl81v1bivlj5V_vZuNDh7TW9jlMU0iMQorng19/s16000/Qatar2022.png)
+
 ## Descripción
 Página web comercial ficticia/no lucrativa, enfocada en la venta de boletos para Qatar 2022, con seccion de noticias y fixture.
 
@@ -13,5 +16,8 @@ Página web comercial ficticia/no lucrativa, enfocada en la venta de boletos par
 ```
 (CREATE DATABASE nueve;), (CREATE USER 'nuevenue'@'%' IDENTIFIED BY 'pass';)
 ```
-2. Darle todos los privilegios en nueve a nuevenue (GRANT ALL PRIVILEGES ON nueve.* to 'nuevenue'@'%';)
-abrir el archivo createTable.php desde el navegador
+2. Darle todos los privilegios en nueve a nuevenue 
+```
+(GRANT ALL PRIVILEGES ON nueve.* to 'nuevenue'@'%';)
+```
+3. Abrir el archivo createTable.php desde el navegador
