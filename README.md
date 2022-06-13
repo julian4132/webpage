@@ -9,13 +9,14 @@ Página web comercial ficticia/no lucrativa, enfocada en la venta de boletos par
 - php
 - mysql
 
-## Configuración de la base de datos:
+## Configuración de la base de datos (CLI):
 1. Abrir mysql como root, crear la base de datos 'nueve' y el usuario 'nuevenue'
 ```
-(CREATE DATABASE nueve;), (CREATE USER 'nuevenue'@'%' IDENTIFIED BY 'pass';)
+CREATE DATABASE nueve;
+CREATE USER 'nuevenue'@'%' IDENTIFIED BY 'pass';
 ```
 2. Darle todos los privilegios en nueve a nuevenue 
 ```
-(GRANT ALL PRIVILEGES ON nueve.* to 'nuevenue'@'%';)
+GRANT ALL PRIVILEGES ON nueve.* to 'nuevenue'@'%';
 ```
 3. Abrir el archivo createTable.php desde el navegador
