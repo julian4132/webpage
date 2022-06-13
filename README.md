@@ -1,5 +1,14 @@
 # Qatar 2022
 
+## ToDo List
+- [ ] Chequear que el mail sea valido (se puede crear/editar una cuenta con sads@) (back)
+- [ ] Panel administrador (front)
+- [ ] Panel administrador (edicion DB - checkTable)
+- [ ] Panel administrador (back)
+- [ ] Sacar fade in en cellulares (si no scrolleas no aparece nada)(front)
+- [ ] Crear paginas noticias fixture y entradas (front)
+- [ ] Agregar funciones para usuarios logeados
+
 ## Descripción
 Página web comercial ficticia/no lucrativa, enfocada en la venta de boletos para Qatar 2022, con seccion de noticias y fixture.
 
