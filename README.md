@@ -9,6 +9,7 @@
 - [ ] Crear paginas noticias fixture y entradas (front)
 - [ ] Agregar funciones para usuarios logeados
 - [ ] Ruedita de carga (front)
+- [ ] Añadir nombre de usuario (tener en cuenta cross site scripting) (back/front) 
 
 ## Descripción
 Página web comercial ficticia/no lucrativa, enfocada en la venta de boletos para Qatar 2022, con seccion de noticias y fixture.
