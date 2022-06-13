@@ -19,6 +19,4 @@ Página web comercial ficticia/no lucrativa, enfocada en la venta de boletos par
 (GRANT ALL PRIVILEGES ON nueve.* to 'nuevenue'@'%';)
 ```
 3. Abrir el archivo createTable.php desde el navegador
-
-
-<div style="text-align:center"><img src ="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjOvjzsnX8ZuRAu3Q6rd6zcTB1blNargpKl1VSaaF-sCK6rhNTisThXPHyCMJWeVaO1QieP6EDTrMzPmH4TDlyLPAwgrmx7lkk-njAt6j1y1BQbYw5WLpi-kchbmbI55I4ShjCCGYpO7iCwd_2ZnKBl81v1bivlj5V_vZuNDh7TW9jlMU0iMQorng19/s16000/Qatar2022.png" /></div>
+4. !(https://c.tenor.com/GeThUZwLuDsAAAAd/messi-messirve.gif)
