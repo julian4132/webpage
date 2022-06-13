@@ -384,6 +384,14 @@ hr {
     margin: 100px 0px;
   }
 
+  .info-section p {
+    font-size: 20px;
+  }
+
+  .info-section h1 {
+    font-size: 40px;
+  }
+
 }
 
 @media (max-width: 920px) {
@@ -393,6 +401,35 @@ hr {
   .info-section div {
     margin: 10px 0px;
   }
+
+  .info-section p {
+    font-size: 18px;
+  }
+
+  .info-section h1 {
+    font-size: 36px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .info-section {
+    text-align: left;
+  }
+
+  .info-section p {
+    font-size: 16px;
+  }
+
+  .info-section h1 {
+    font-size: 32px;
+  }
+
+  .info-section img {
+    height: 300px;
+    margin: 20px 10px;
+  }
+
 }
 
 .contact {
@@ -402,7 +439,6 @@ hr {
 
 .contact ul {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
@@ -413,7 +449,7 @@ hr {
 
 .contact li a{
   text-decoration: none;
-  margin: 20px 60px;
+  margin: 20px 50px;
   font-size: 24px;
 }
 
@@ -421,23 +457,22 @@ hr {
   .contact ul {
     flex-direction: column;
     text-align: center;
+    padding-left: 0px;
   }
 
   .contact li{
     text-decoration: none;
     margin: 10px;
   }
+
   .contact li a{
-    font-size: 30px;
+    font-size: 26px;
   }
 }
 
 @media (max-width: 550px) {
-  .contact {
-    padding: 30px 10px;
-  }
-
   .contact li a{
+    margin: 20px 0px;
     font-size: 20px;
   }
 }
