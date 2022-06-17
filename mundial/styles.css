@@ -451,6 +451,11 @@ hr {
   text-decoration: none;
   margin: 20px 50px;
   font-size: 24px;
+  transition: transform .2s; /* Animation */
+}
+
+.contact li a:hover{
+  transform: scale(1.5);
 }
 
 @media (max-width: 920px) {
