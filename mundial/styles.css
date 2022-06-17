@@ -256,7 +256,6 @@ figure.sixteen-nine-img {
 }
 
 .flex-item {
-  /*border: 2px solid black;*/
   margin: 10px;
   color: white; 
   width: 45%;
@@ -265,6 +264,11 @@ figure.sixteen-nine-img {
 .flex-item img {
   height: 230px;
   margin:20px;
+  transition: transform .2s; /* Animation */
+}
+
+.flex-item img:hover {
+  transform: scale(1.05);
 }
 
 .left-item {
@@ -445,17 +449,17 @@ hr {
 .contact li {
   list-style:none;
   display: inline-block;
+  transition: transform .2s; /* Animation */
+}
+
+.contact li:hover{
+  transform: scale(1.05);
 }
 
 .contact li a{
   text-decoration: none;
   margin: 20px 50px;
   font-size: 24px;
-  transition: transform .2s; /* Animation */
-}
-
-.contact li a:hover{
-  transform: scale(1.5);
 }
 
 @media (max-width: 920px) {
