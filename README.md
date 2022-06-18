@@ -2,8 +2,8 @@
 
 ## ToDo List
 - [ ] Chequear que el mail sea valido (se puede crear/editar una cuenta con sads@) (back)
-- [ ] Panel administrador (front)
-- [ ] Panel administrador (edicion DB - checkTable)
+- [X] Panel administrador (front)
+- [X] Panel administrador (edicion DB - checkTable)
 - [ ] Panel administrador (back)
 - [ ] Sacar fade in en cellulares (si no scrolleas no aparece nada)(front)
 - [ ] Crear paginas noticias fixture y entradas (front)
