@@ -6,6 +6,7 @@
   --darkcolor1: #700b24;
   --backcolor1: rgb(15, 15, 15);
   --backcolor2: rgb(25,25,25);
+  --backcolor3: rgb(15, 15, 15);
 }
 
 * {box-sizing: border-box}
@@ -75,21 +76,25 @@ hr {
 
 table {
     font-size: 24px;
+    border-collapse: collapse;
 }
 
 td,th {
-	border: 2px solid var(--color2);
+	border: 2px solid rgb(155, 155, 155);;
     padding: 10px;
 }
 
+th {
+    background-color: var(--darkcolor1)
+}
 
+tr:nth-child(even) {
+    background-color: var(--backcolor1);
+}
 
-
-
-
-
-
-
+tr:hover {
+    background-color: var(--backcolor3);
+}
   
 @media (max-width: 650px) {
   .box {
