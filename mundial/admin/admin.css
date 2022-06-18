@@ -71,6 +71,25 @@ hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
+
+
+table {
+    font-size: 24px;
+}
+
+td,th {
+	border: 2px solid var(--color2);
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
   
 @media (max-width: 650px) {
   .box {
