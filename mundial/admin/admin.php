@@ -28,62 +28,16 @@
                 <thead>
                     <tr>
                         <th>Email</th>
-                        <th>Contraseña</th>
+                        <th>Fecha de creación</th>
                         <th>Cantidad de ingresos</th>
                         <th>Última conexión</th>
                         <th>Acción</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>ignacioortego@gmail.com</td>
-                        <td>chanchitofeliz</td>
-                        <td>12</td>
-                        <td>18/06/22</td>
-                        <td><button>Bloquear</button></td>
-                    </tr>
-                    <tr>
-                        <td>ignacioortego@gmail.com</td>
-                        <td>chanchitofeliz</td>
-                        <td>12</td>
-                        <td>18/06/22</td>
-                        <td><button>Bloquear</button></td>
-                    </tr>
-                    <tr>
-                        <td>ignacioortego@gmail.com</td>
-                        <td>chanchitofeliz</td>
-                        <td>12</td>
-                        <td>18/06/22</td>
-                        <td><button>Bloquear</button></td>
-                    </tr>
-                    <tr>
-                        <td>ignacioortego@gmail.com</td>
-                        <td>chanchitofeliz</td>
-                        <td>12</td>
-                        <td>18/06/22</td>
-                        <td><button>Bloquear</button></td>
-                    </tr>
-                    <tr>
-                        <td>ignacioortego@gmail.com</td>
-                        <td>chanchitofeliz</td>
-                        <td>12</td>
-                        <td>18/06/22</td>
-                        <td><button>Bloquear</button></td>
-                    </tr>
-                    <tr>
-                        <td>ignacioortego@gmail.com</td>
-                        <td>chanchitofeliz</td>
-                        <td>12</td>
-                        <td>18/06/22</td>
-                        <td><button>Bloquear</button></td>
-                    </tr>
-                    <tr>
-                        <td>ignacioortego@gmail.com</td>
-                        <td>chanchitofeliz</td>
-                        <td>12</td>
-                        <td>18/06/22</td>
-                        <td><button>Bloquear</button></td>
-                    </tr>
+                    <?php
+                        include "db_admin.php";
+                    ?>
                 </tbody>
 
               </table>
