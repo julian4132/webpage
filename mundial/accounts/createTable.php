@@ -11,6 +11,7 @@ $registro = $mysqli->query("create table if not exists usuarios (
     logins  int,
 	activo   	boolean,
 	verifhash		text,
+    lastlogin   text,
 	nuevocorreo     text,
 	nuevopasshash   text
 )");

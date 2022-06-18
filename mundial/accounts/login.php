@@ -15,7 +15,16 @@ if($row_cnt = $sql->num_rows > 0){
     $passhash = $row['passhash'];
 
     if(password_verify($userPassword, $passhash)){
+        //login was successful
+        $time = time();
+        $date = date('Y-m-d--H:i', $time);
+
         $_SESSION['user_name'] = $row['correo'];
+        $logins = $row['logins'];
+        $logins += 1;
+
+        $sql->close();
+        $update_logins = $conn->query("UPDATE usuarios SET logins=".$logins.", lastlogin='".$date."' WHERE id='".$row['id']."' ");
         echo json_encode(array('success' => true));
     } else {
         //incorrect password
