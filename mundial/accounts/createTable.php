@@ -10,6 +10,7 @@ $registro = $mysqli->query("create table if not exists usuarios (
 	id		int not null primary key auto_increment,
     logins  int,
 	activo   	boolean,
+    baneado boolean,
 	verifhash		text,
     lastlogin   text,
 	nuevocorreo     text,

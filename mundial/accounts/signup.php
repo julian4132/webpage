@@ -17,7 +17,7 @@ if($_POST['psw']==$_POST['psw-repeat']){
     $hash = md5( rand(0,1000) );
     $time = time();
     $date = date('Y-m-d--H:i', $time);
-    $sql = "INSERT INTO usuarios (correo, passhash, activo, verifhash, logins, lastlogin) VALUES ('".$userEmail."', '".$userPassword."', 0, '".$hash."', 1, '".$date."')";
+    $sql = "INSERT INTO usuarios (correo, passhash, activo, baneado, verifhash, logins, lastlogin) VALUES ('".$userEmail."', '".$userPassword."', 0, 0, '".$hash."', 1, '".$date."')";
 
     include "sendEmail.php";
 
