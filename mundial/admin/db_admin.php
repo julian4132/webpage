@@ -9,7 +9,7 @@ if ($_SESSION['user_name'] == 'admin@admin.com' || $_SESSION['user_name'] == 'jo
         // el mail esta ahi para poder banear a ese usuario en particular
         // no se me ocurrio otra forma para poder hacer esto con js 
         // es un panel de administrador, la seguridad no es esencial
-        $str_banned = "<td><a href='./ban.php?email=".$row['correo']."'>Desbloquear</a></td>";
+        $str_banned = "<td><a href='./ban.php?email=".$row['correo']."'>Desbanear</a></td>";
         $str_unbanned = "<td><a href='./ban.php?email=".$row['correo']."'>Banear</a></td>";
         echo "<tr>";
         echo "<td>".$row['correo']."</td>";
