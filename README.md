@@ -38,6 +38,5 @@ $host='localhost';
 $pass='password';
 $base='nueve';
 ?>
-
 ```
 4. Abrir el archivo `accounts/createTable.php` desde el navegador (este archivo borra la tabla antigua si existe, en ese caso los ususarios se deberan crear de nuevo)
