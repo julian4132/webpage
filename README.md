@@ -17,7 +17,7 @@ Página web comercial ficticia/no lucrativa, enfocada en la venta de boletos par
 ## Instalacion en servidor (linux):
 **Requerimientos**: 
 - apache2
-- php
+- php, php-mysqli
 - mysql
 
 ## Configuración de la base de datos (CLI):
@@ -30,4 +30,13 @@ CREATE USER 'nuevenue'@'%' IDENTIFIED BY 'pass';
 ```
 GRANT ALL PRIVILEGES ON nueve.* to 'nuevenue'@'%';
 ```
-3. Abrir el archivo createTable.php desde el navegador
+3. Crear el archivo `accounts/variables.inc` con el siguiente formato
+```
+<?php
+$user='nuevenue';
+$host='localhost';
+$pass='password';
+$base='nueve';
+?>
+```
+4. Abrir el archivo `accounts/createTable.php` desde el navegador (este archivo borra la tabla antigua si existe, en ese caso los ususarios se deberan crear de nuevo)
