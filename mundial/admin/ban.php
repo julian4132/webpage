@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<?php
+session_start();
+include_once "../accounts/connect.php";
+if(!isset($_GET['email'])) die();
+$mail = $_GET['email'];
+$sql = $conn->query("SELECT * FROM usuarios WHERE correo='".$mail."'");
+if($sql->num_rows > 0) {
+    $row = $sql->fetch_array(MYSQLI_ASSOC);
+}
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,12 +18,12 @@
     <link rel="stylesheet" href="../scrollbar.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="../images/favicon.ico"/>
-    <script src="admin.js"></script>
-    <title>Panel de Administrador</title>
+    <script src="../jquery.js"></script>
+    <title>Banear usuario</title>
 </head>
 <body>
 
-  <a href="../index.php" class="arrow">
+  <a href="./admin.php" class="arrow">
     <i class="material-symbols-outlined" style="font-size: 60px;">
       arrow_back
     </i>
@@ -29,29 +39,28 @@
             <div class="flex">
                 <div>
                     <h4>Email</h4>
-                    <p>Importar datos</p>
+                    <p id="correo" name="correo"><?php echo $row['correo']; ?></p>
                     <h4>Fecha de creación</h4>
-                    <p>Importar datos</p>
+                    <p><?php echo $row['cuando'];?></p>
+
                 </div>
                 <div>
                     <h4>Cantidad de ingresos</h4>
-                    <p>Importar datos</p>
+                    <p><?php echo $row['logins'];?></p>
                     <h4>Última conexión</h4>
-                    <p>Importar datos</p>
+                    <p><?php echo $row['lastlogin'];?></p>
                 </div>
             </div>
             <h2>Razón de bloqueo</h2>
-            <textarea name="razon"></textarea>
-            
-            <div class="flex">
-                <button style="width:70%">Enviar</button>
-            </div>
-
+                <textarea id="razon" name="razon"></textarea>
+                
+                <div class="flex">
+                    <button id="submit" type="submit" style="width:70%">Enviar</button>
+                </div>
 
         </div>
-      
-
       </form>
+    <script src="admin.js"></script>
   </div>
 
 </body>
