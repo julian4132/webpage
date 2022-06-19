@@ -1,7 +1,7 @@
 # Qatar 2022
 
 ## ToDo List
-- [ ] Chequear que el mail sea valido (se puede crear/editar una cuenta con sads@) (back)
+- [X] Chequear que el mail sea valido (se puede crear/editar una cuenta con sads@) (back)
 - [X] Panel administrador (front)
 - [X] Panel administrador (edicion DB - checkTable)
 - [ ] Panel administrador (back)
