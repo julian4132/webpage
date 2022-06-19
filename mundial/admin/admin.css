@@ -6,7 +6,7 @@
   --darkcolor1: #700b24;
   --backcolor1: rgb(15, 15, 15);
   --backcolor2: rgb(25,25,25);
-  --backcolor3: rgb(15, 15, 15);
+  --backcolor3: rgb(45, 45, 45);
 }
 
 * {box-sizing: border-box}
@@ -94,6 +94,30 @@ tr:nth-child(even) {
 
 tr:hover {
   background-color: var(--backcolor3);
+}
+
+/* For Ban Page */
+
+.flex{
+  display: flex;
+  justify-content: center;
+}
+
+.flex div {
+  flex:50%;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  background-color: var(--backcolor3);
+  padding: 15px;
+  color: var(--color2);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
   
 @media (max-width: 650px) {
