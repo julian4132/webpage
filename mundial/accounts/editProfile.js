@@ -33,6 +33,21 @@ $( document ).ready(function() {
                     //$('.my-acc').show();
                     //login successful
                 } else {
+                    if(json['error'] = 'incorrect password') {
+                        alert('Contraseña incorrecta');
+                    }
+                    if(json['error'] = 'invalid mail') {
+                        alert('Correo invalido');
+                    }
+                    if(json['error'] = 'invalid user') {
+                        alert('El ususario no existe');
+                    }
+                    if(json['error'] = 'no password match') {
+                        alert('Las contraseñas no coinciden');
+                    }
+                    if(json['error'] = 'mail already used') {
+                        alert('El correo ya está en uso');
+                    }
                     // login failed
                 }
             },
