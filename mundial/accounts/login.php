@@ -17,7 +17,7 @@ if($row_cnt = $sql->num_rows > 0){
     if(password_verify($userPassword, $passhash)){
         //login was successful
         $time = time();
-        $date = date('Y-m-d--H:i', $time);
+        $date = date('Y-m-d H:i', $time);
 
         $_SESSION['user_name'] = $row['correo'];
         $logins = $row['logins'];
