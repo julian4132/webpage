@@ -36,6 +36,9 @@ $( document ).ready(function() {
                     if(json['error'] == 'mail already used') {
                         alert('El correo electronico ya está en uso.');
                     }
+                    if(json['error'] == 'invalid mail') {
+                        alert('Correo electronico invalido');
+                    }
                     // login failed
                 }
             },
