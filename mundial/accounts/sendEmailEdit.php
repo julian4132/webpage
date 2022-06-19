@@ -2,7 +2,7 @@
 
 $to      = $userEmail;
 
-$subject = 'Registración | Verificación'; 
+$subject = 'Cambio de datos | Verificación'; 
 $message = '
  
 El cambio del perfil se ha efectuado exitosamente.
@@ -15,7 +15,7 @@ https://agssoft.ar/NUEVE/accounts/checkEdit.php?user='.$userEmail.'&hash='.$hash
  
 ';
                      
-$headers = 'From:noreply@yourwebsite.com' . "\r\n";
+$headers = 'From:noreply@qatar2022.com' . "\r\n";
 mail($to, $subject, $message, $headers);
 
 

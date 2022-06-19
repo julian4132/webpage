@@ -2,7 +2,7 @@
 
 $to      = $userEmail;
 
-$subject = 'Registración | Verificación'; 
+$subject = 'Registro | Verificación'; 
 $message = '
  
 ¡Muchas gracias por registrarte!
@@ -16,7 +16,7 @@ https://agssoft.ar/NUEVE/accounts/check.php?user='.$userEmail.'&hash='.$hash.'
  
 ';
                      
-$headers = 'From:noreply@yourwebsite.com' . "\r\n";
+$headers = 'From:noreply@qatar2022.com' . "\r\n";
 mail($to, $subject, $message, $headers);
 
 
