@@ -75,25 +75,25 @@ hr {
 
 
 table {
-    font-size: 24px;
-    border-collapse: collapse;
+  font-size: 24px;
+  border-collapse: collapse;
 }
 
 td,th {
 	border: 2px solid rgb(155, 155, 155);;
-    padding: 10px;
+  padding: 10px;
 }
 
 th {
-    background-color: var(--darkcolor1)
+  background-color: var(--darkcolor1)
 }
 
 tr:nth-child(even) {
-    background-color: var(--backcolor1);
+  background-color: var(--backcolor1);
 }
 
 tr:hover {
-    background-color: var(--backcolor3);
+  background-color: var(--backcolor3);
 }
   
 @media (max-width: 650px) {
