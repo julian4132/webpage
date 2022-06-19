@@ -30,6 +30,10 @@ $( document ).ready(function() {
                         alert("El usuario es invalido.");
                         // invalid user
                     }
+                    if(json['error'] == 3) {
+                        console.log("3");
+                        alert("El usuario esta baneado.");
+                    }
                 }
             },
             error: function(data) {
