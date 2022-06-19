@@ -31,7 +31,11 @@ if($sql->num_rows > 0) {
   <div class="box">
     <form>
         <div class="container">
-            <h1>Banear Usuario</h1>
+            <?php 
+            if($row['baneado']) echo "<h1>Desbanear Usuario</h1>";
+            else echo "<h1>Banear Usuario</h1>";
+            ?>
+            
             <p>Completa el formulario para realizar el bloqueo</p>
             <hr>
 
@@ -51,7 +55,7 @@ if($sql->num_rows > 0) {
                     <p><?php echo $row['lastlogin'];?></p>
                 </div>
             </div>
-            <h2>Razón de bloqueo</h2>
+            <h2>Razón del bloqueo/desbloqueo</h2>
                 <textarea id="razon" name="razon"></textarea>
                 
                 <div class="flex">

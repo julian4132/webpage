@@ -12,9 +12,12 @@ $(document).ready(function () {
                 'razon': razon
             },
             success: function(data) {
-                console.log("suc");
-                console.log(data);
+                let json = JSON.parse(data);
+                if(json['success'] == true) {
+                    alert(json['msg'])
+                    window.location.replace('./admin.php');
 
+                }
 
             },
             error: function(data) {
