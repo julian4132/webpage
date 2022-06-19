@@ -33,6 +33,13 @@ session_start();
             
             <label for="email"><b>Email</b></label>
             <p><?php echo $_SESSION['user_name'];?></p>
+            <?php
+            if($_SESSION['user_name'] == 'admin@admin.com' || $_SESSION['user_name'] == 'joaquinvergara070@gmail.com') {
+                echo "<hr>";
+                echo "<a href='../admin/admin.php'>Panel de administrador</a>";
+            }
+
+            ?>
 
             <hr>
             <button type="submit" id="submit" class="registerbtn">Cerrar sesión</button>

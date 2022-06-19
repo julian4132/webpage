@@ -2,7 +2,7 @@
 session_start();
 include_once "../accounts/connect.php";
 //$_SESSION['user_name'] == 'admin@admin.com'
-if (1) {
+if ($_SESSION['user_name'] == 'admin@admin.com' || $_SESSION['user_name'] == 'joaquinvergara070@gmail.com') {
     $sql = $conn->query("SELECT * FROM usuarios");
     $users_count = $sql->num_rows;
     while($row = $sql->fetch_array(MYSQLI_ASSOC)) {
