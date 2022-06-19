@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="admin.css">
     <link rel="stylesheet" href="../scrollbar.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
     <script src="admin.js"></script>
-    <title>Amin Panel</title>
+    <title>Panel de Administrador</title>
 </head>
 <body>
 
