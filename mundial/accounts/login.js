@@ -18,7 +18,6 @@ $( document ).ready(function() {
                     // succesfuly logged in
                     window.location.replace("../index.php");
                 } else {
-                    console.log("error");
                     if(json['error'] == "1") {
                         // incorrect password
                         console.log("1");
