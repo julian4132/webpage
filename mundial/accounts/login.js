@@ -5,6 +5,11 @@ $( document ).ready(function() {
         let user = $('#email').val();
         let pass = $('#psw').val();
 
+        //bloquea el botón cuando se hace click
+        var element = document.getElementById("submit");
+        element.classList.add("loading-button");
+        element.setAttribute("disabled", true);
+
         $.ajax({
             url: "login.php",
             method: "post",
@@ -34,6 +39,11 @@ $( document ).ready(function() {
                         alert("El usuario esta baneado.");
                     }
                 }
+            },
+            complete: function(){
+                //desbloquea el botón cuando recibe respuesta
+                element.classList.remove("loading-button");
+                element.setAttribute("disabled", false);
             },
             error: function(data) {
                 console.log(data);
