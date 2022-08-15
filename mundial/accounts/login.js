@@ -6,9 +6,11 @@ $( document ).ready(function() {
         let pass = $('#psw').val();
 
         //bloquea el botón cuando se hace click
-        var element = document.getElementById("submit");
-        element.classList.add("loading-button");
-        element.setAttribute("disabled", true);
+        var button = document.getElementById("submit");
+        button.classList.add("loading-button");
+        button.setAttribute("disabled", "disabled");
+        var buttonText = document.getElementById("submit-text");
+        $(buttonText).css("visibility", "hidden");
 
         $.ajax({
             url: "login.php",
@@ -42,8 +44,9 @@ $( document ).ready(function() {
             },
             complete: function(){
                 //desbloquea el botón cuando recibe respuesta
-                element.classList.remove("loading-button");
-                element.setAttribute("disabled", false);
+                button.classList.remove("loading-button");
+                button.removeAttribute("disabled");
+                $(buttonText).css("visibility", "visible");
             },
             error: function(data) {
                 console.log(data);
